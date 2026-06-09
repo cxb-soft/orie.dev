@@ -41,14 +41,13 @@ npm run preview
 
 ### GitHub Pages
 
-已内置 GitHub Actions workflow：`.github/workflows/deploy-pages.yml`。
+当前仓库发布到 `gh-pages` 分支，GitHub Pages Source 使用 `Deploy from a branch`，分支选择 `gh-pages` / root。
 
-启用步骤：
+手动发布流程：
 
-1. 将仓库推送到 GitHub。
-2. 进入 GitHub 仓库 `Settings → Pages`。
-3. Source 选择 `GitHub Actions`。
-4. 推送到 `master` 或 `main` 后会自动执行 `npm run build` 并发布 `dist/`。
+1. 执行 `npm run build` 生成 `dist/`。
+2. 将 `dist/` 内容发布到 `gh-pages` 分支根目录。
+3. 在 GitHub Pages 构建完成后访问 `https://cxb-soft.github.io/orie.dev/` 验证。
 
 ```bash
 npm run build
