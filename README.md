@@ -41,9 +41,17 @@ npm run preview
 
 ### GitHub Pages
 
+已内置 GitHub Actions workflow：`.github/workflows/deploy-pages.yml`。
+
+启用步骤：
+
+1. 将仓库推送到 GitHub。
+2. 进入 GitHub 仓库 `Settings → Pages`。
+3. Source 选择 `GitHub Actions`。
+4. 推送到 `master` 或 `main` 后会自动执行 `npm run build` 并发布 `dist/`。
+
 ```bash
 npm run build
-# 将 dist/ 内容发布到 gh-pages 分支，或用 GitHub Actions 上传 Pages artifact
 ```
 
 ## Status
