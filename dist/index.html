@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Orie — 独立开发者。全栈工程、系统架构、PaaS 部署与前端打造。把想法变成可交付。" />
+    <title>Orie — 独立开发者 · 全栈工程</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Orie home">
+        <span class="brand-mark">O</span>
+        <span>Orie</span>
+      </a>
+      <nav aria-label="主导航">
+        <a href="#work">项目</a>
+        <a href="#about">关于</a>
+        <a href="#stack">技术栈</a>
+        <a class="nav-cta" href="#contact">联系我</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">独立开发者 · 2023 年至今</p>
+          <h1>把想法变成<br />今晚就能上线的<span class="no-break">系统。</span></h1>
+          <p class="hero-lede">
+            我是 Orie，一名全栈开发者。偏好直接、务实、可交付的工作方式。从需求梳理到系统设计，从代码落地到部署上线，我可以独立完成整条链路。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">看项目</a>
+            <a class="button ghost" href="#contact">合作咨询</a>
+          </div>
+        </div>
+        <div class="hero-card reveal delay-1" aria-label="状态卡片">
+          <div class="orb"></div>
+          <p class="card-label">Shipping Status</p>
+          <strong>Active</strong>
+          <span>独立项目持续迭代中</span>
+          <div class="metric-grid">
+            <div><b>3+</b><small>端到端项目</small></div>
+            <div><b>Go/TS</b><small>主力语言</small></div>
+            <div><b>0→1</b><small>交付能力</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section-shell split-section">
+        <div>
+          <p class="eyebrow">Selected Work</p>
+          <h2>专注能做深的东西，<br />而不是做得多的东西。</h2>
+        </div>
+        <div class="work-grid">
+          <article class="work-card reveal">
+            <span class="tag infra">全栈系统</span>
+            <h3>剧本分发平台</h3>
+            <p>剧本版权管理 SaaS 平台。Go + Gin + SQLite/PostgreSQL 双兼容后端，Next.js + shadcn/ui 前端，Docker / Render / Vercel 多环境部署就绪。</p>
+            <div class="card-footer">
+              <span>Go</span><span>Next.js</span><span>Docker</span>
+            </div>
+          </article>
+
+          <article class="work-card reveal delay-1">
+            <span class="tag systems">系统架构</span>
+            <h3>BSA / AlpaSim 具身智能框架</h3>
+            <p>Brain-Spinal-Actuator 三层架构，gRPC 通信，AlpaSim 适配器，可插拔安全内核。完整 proto 定义 + generated stubs + 测试 + 部署文档。</p>
+            <div class="card-footer">
+              <span>gRPC</span><span>Python</span><span>Protobuf</span>
+            </div>
+          </article>
+
+          <article class="work-card reveal delay-2">
+            <span class="tag frontend">前端工程</span>
+            <h3>高级静态站模板</h3>
+            <p>零依赖的三件套暗色系高质感落地页。支持 Vercel、Netlify、GitHub Pages 一键部署。GitHub Actions CI/CD 自动发布流程已就绪。</p>
+            <div class="card-footer">
+              <span>HTML5</span><span>CSS3</span><span>CI/CD</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section-shell split-section">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>技能不是清单，<br />是解决问题的能力。</h2>
+        </div>
+        <div class="about-text reveal">
+          <p>
+            我的工作方式可以概括成一句话：<strong>先理解，再动手；小步迭代，验证闭环。</strong>
+          </p>
+          <p>
+            不做过度设计，但也不接受临时拼凑。每个项目我会先写测试、再写代码；先跑通链路、再做优化。发布之前会做好部署文档、回滚策略和健康检查。
+          </p>
+          <p>
+            当前主要在做独立产品，也开放接受有明确目标的小型技术合作。
+          </p>
+        </div>
+      </section>
+
+      <section id="stack" class="section-shell services">
+        <p class="eyebrow">Tech Stack</p>
+        <h2>用得深，比知道得多重要。</h2>
+        <div class="service-list">
+          <div class="service-item"><b>后端</b><span>Go · Gin · GORM · gRPC · SQLite / PostgreSQL</span></div>
+          <div class="service-item"><b>前端</b><span>Next.js · React · TypeScript · Tailwind CSS · shadcn/ui</span></div>
+          <div class="service-item"><b>部署</b><span>Docker · Nginx · Render · Vercel · GitHub Actions</span></div>
+          <div class="service-item"><b>其他</b><span>Python · Protobuf · 系统架构设计 · 部署流程自动化</span></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-shell">
+        <div class="contact-panel reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>有新想法，或者有明确的任务目标？</h2>
+          <p class="hero-lede" style="margin-top:1rem;">
+            我不做"试试看"的项目。但如果你有一个清晰的边界、可验证的目标和合理的排期，我们可以快速启动并持续交付。
+          </p>
+          <div class="hero-actions" style="margin-top:2.5rem;">
+            <a class="button primary" href="mailto:hello@orie.dev">发邮件给我</a>
+            <a class="button ghost" href="https://github.com/cxb-soft/orie.dev" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Orie. Built with patience and shipping.</span>
+      <span>源码可复用，设计不可抄袭。</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
